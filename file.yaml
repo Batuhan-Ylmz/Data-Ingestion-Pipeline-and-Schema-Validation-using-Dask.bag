@@ -1,0 +1,18 @@
+file_type: txt
+dataset_name: testfile
+file_name: data
+table_name: edsurv
+inbound_delimiter: "\n\n"
+outbound_delimiter: "|"
+validations:
+  file_size:
+    min_size: 2
+    max_size: 10 # gb
+  text_length:
+    min_length: 1000000000
+    max_length: 100000000000
+  word_count:
+    min_count: 1000000
+    max_count: 1000000000000
+  format_validation:
+    required_pattern: "Lorem ipsum"
